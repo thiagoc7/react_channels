@@ -10,7 +10,8 @@ defmodule ReactChannels do
       # Start the endpoint when the application starts
       supervisor(ReactChannels.Endpoint, []),
       # Start the Ecto repository
-      supervisor(ReactChannels.Repo, []),
+      # supervisor(ReactChannels.Repo, []),
+      worker(RethinkDatabase, [[port: 28015, host: "localhost", db: :react_channels]]),
       # Here you could define other workers and supervisors as children
       # worker(ReactChannels.Worker, [arg1, arg2, arg3]),
     ]

@@ -2,7 +2,7 @@ defmodule ReactChannels.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", ReactChannels.RoomChannel
+  channel "tasks:*", ReactChannels.TaskChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
