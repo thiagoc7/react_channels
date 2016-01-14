@@ -37,7 +37,7 @@ defmodule ReactChannels.Mixfile do
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:exrm, "~> 1.0.0-rc7"},
-     # {:rethinkdb_ecto, github: "hamiltop/rethinkdb_ecto"},
+     {:rethinkdb_ecto, github: "hamiltop/rethinkdb_ecto"},
      {:rethinkdb, "~> 0.2.1"}
    ]
   end
